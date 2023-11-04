@@ -2,6 +2,11 @@
 
 int main(void) {
     //prints out hello world in the command line
-    printf("Hello World\n");
+    char input[100];
+    // Get input from the user.
+    fgets(input, sizeof(input), stdin);
+    scanf("%s", input);
+
+    printf("Hello %s\n", input);
     return 0;
 }

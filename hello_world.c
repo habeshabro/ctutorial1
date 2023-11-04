@@ -2,11 +2,11 @@
 
 int main(void) {
     //prints out hello world in the command line
-    char input[100];
+    char fullName[100];
     // Get input from the user.
     printf("Enter your name:\n");
-    scanf("%s", input);
+    fgets(fullName, sizeof(fullName), stdin);
 
-    printf("Hello %s\n", input);
+    printf("Hello %s\n", fullName);
     return 0;
 }
